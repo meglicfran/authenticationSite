@@ -1,0 +1,30 @@
+{
+  "name": "authenticationsite",
+  "version": "1.0.0",
+  "description": "authenticationSite made with node.js(express)",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meglicfran/authenticationSite.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/meglicfran/authenticationSite/issues"
+  },
+  "homepage": "https://github.com/meglicfran/authenticationSite#readme",
+  "dependencies": {
+    "@hapi/joi": "^15.1.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
