@@ -9,6 +9,7 @@ router = express.Router();
 
 // register validation
 router.post("/", async (req, res) => {
+  console.log(req.body);
   const vali = registervalidation(req.body);
   if (vali.error) {
     res.send(vali.error.details[0].message);
@@ -35,10 +36,11 @@ router.post("/", async (req, res) => {
   });
   try {
     const savedUser = await user.save();
-    res.send(savedUser._id);
+    res.send("Sucessful");
   } catch (err) {
     res.status(400).send(err);
   }
+  res.end();
 });
 
 //export the router
