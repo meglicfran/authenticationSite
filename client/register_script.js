@@ -9,7 +9,6 @@ sendRequest = () => {
   const request = new XMLHttpRequest();
 
   request.onload = () => {
-    console.log(request.responseText);
     alert(request.responseText);
   };
 
@@ -21,8 +20,6 @@ sendRequest = () => {
 
   const JSONrequestData = JSON.stringify(requestData);
 
-  console.log(JSONrequestData);
-
   request.open("post", "/register");
   request.setRequestHeader("Content-type", "application/json");
   request.send(JSONrequestData);
@@ -32,7 +29,5 @@ document.getElementsByTagName("BODY")[0].onkeypress = event => {
   if (event.keyCode == 13) {
     sendRequest();
   }
-  console.log("you pressed a key!");
-  console.log(event.keyCode);
 };
 form.submitButton.addEventListener("click", sendRequest);

@@ -12,5 +12,15 @@ registervalidation = data => {
   };
   return Joi.validate(data, Schema);
 };
+loginvalidation = data => {
+  const Schema = {
+    username: Joi.string().required(),
+    password: Joi.string()
+      .required()
+      .min(8)
+  };
+  return Joi.validate(data, Schema);
+};
 
-module.exports = registervalidation;
+module.exports.registerValidation = registervalidation;
+module.exports.loginValidation = loginvalidation;

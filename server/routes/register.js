@@ -1,15 +1,12 @@
 const express = require("express");
 const User = require("../model/User");
 const bcrypt = require("bcryptjs");
-const jwt = require("jsonwebtoken");
-const Joi = require("@hapi/joi");
-const validation = require("../validate");
+const { registerValidation } = require("../validate");
 
 router = express.Router();
 
 // register validation
 router.post("/", async (req, res) => {
-  console.log(req.body);
   const vali = registervalidation(req.body);
   if (vali.error) {
     res.send(vali.error.details[0].message);
