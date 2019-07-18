@@ -10,6 +10,7 @@ router.post("/", async (req, res) => {
   const vali = registervalidation(req.body);
   if (vali.error) {
     res.send(vali.error.details[0].message);
+    console.log(vali.error.details[0].message);
     return;
   }
   const usernameExists = await User.findOne({ username: req.body.username });
@@ -33,7 +34,7 @@ router.post("/", async (req, res) => {
   });
   try {
     const savedUser = await user.save();
-    res.send("Sucessful");
+    res.send("Success");
   } catch (err) {
     res.status(400).send(err);
   }

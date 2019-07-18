@@ -38,7 +38,7 @@ input::placeholder {
   font-family: "Muli Extralight";
 }
 
-.login {
+.signin {
   width: 434px;
   height: 68px;
   border-radius: 40px;
@@ -51,11 +51,11 @@ input::placeholder {
   cursor: pointer;
 }
 
-.login:hover {
+.signin:hover {
   box-shadow: 6px 6px 9px rgb(0, 0, 0, 0);
 }
 
-.register {
+.back {
   text-decoration: none;
   color: #9a9a9a;
   font-size: 24px;
@@ -63,7 +63,6 @@ input::placeholder {
 
   text-shadow: 6px 6px 9px rgb(0, 0, 0, 0.16);
 }
-
 .err {
   text-align: center;
   display: none;

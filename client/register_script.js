@@ -4,12 +4,23 @@ const form = {
   password: document.getElementById("password"),
   submitButton: document.getElementById("sub")
 };
+const list = document.getElementById("list");
+const item = document.getElementById("err");
+
+console.log(item.textContent);
 
 sendRequest = () => {
   const request = new XMLHttpRequest();
 
   request.onload = () => {
-    alert(request.responseText);
+    list.style.display = "block";
+    item.textContent = request.responseText;
+    if (item.textContent == "Success") {
+      console.log("you did it !");
+      item.classList.remove("err2");
+      item.classList.add("succ");
+    }
+    console.log(item.textContent);
   };
 
   const requestData = {

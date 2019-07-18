@@ -4,32 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style/signin.css" />
+    <link rel="stylesheet" href="style/register.css" />
     <title>Register</title>
   </head>
   <body>
     <div class="title">
       <h1>Register</h1>
     </div>
+    <div class="errors">
+      <ul class="err " id="list">
+        <li class="err2" id="err"></li>
+      </ul>
+    </div>
     <div class="login_form">
-      <input
-        type="text"
-        name="username"
-        placeholder="Username"
-        id="username"
-      /><br />
-      <input type="text" name="email" placeholder="E-mail" id="email" /><br />
+      <input type="text" name="username" placeholder="Username" id="username" />
+      <input type="text" name="email" placeholder="E-mail" id="email" />
       <input
         type="password"
         name="password"
         placeholder="Password"
         id="password"
-      /><br />
+      />
       <a
         ><button id="sub" class="signin" type="submit">
           <b>Register</b>
         </button></a
-      ><br />
+      >
       <a href="index.html" class="back">Back</a>
     </div>
     <script type="text/javascript" src="register_script.js"></script>

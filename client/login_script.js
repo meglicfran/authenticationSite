@@ -4,11 +4,19 @@ const form = {
   submitButton: document.getElementById("sub")
 };
 
+const list = document.getElementById("list");
+const item = document.getElementById("err");
+
 sendRequest = () => {
   const request = new XMLHttpRequest();
 
   request.onload = () => {
-    alert(request.responseText);
+    list.style.display = "block";
+    item.textContent = request.responseText;
+    if (item.textContent == "Success") {
+      item.classList.remove("err2");
+      item.classList.add("succ");
+    }
   };
 
   const requestData = {

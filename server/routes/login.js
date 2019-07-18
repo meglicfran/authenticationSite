@@ -9,15 +9,12 @@ router = express.Router();
 
 // register validation
 router.post("/", async (req, res) => {
-  console.log(req.body.password);
-
   const vali = loginValidation(req.body);
   if (vali.error) {
     res.send(vali.error.details[0].message);
     return;
   }
   const user = await User.findOne({ username: req.body.username });
-  console.log(user);
   if (!user) {
     res.send("Invalid username or password");
     return;
