@@ -1,0 +1,36 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
+h1 {
+  font-size: 78px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  text-shadow: 6px 6px 6px rgb(0, 0, 0, 0.16);
+}
+.title {
+  text-align: center;
+}
+.details {
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 6px 6px 6px rgb(0, 0, 0, 0.16);
+  margin-bottom: 60px;
+}
+div {
+  margin-bottom: 31px;
+}
+t {
+  font-family: 'Muli Light', sans-serif;
+}
+.profile {
+  text-decoration: none;
+  color: #9a9a9a;
+  font-size: 24px;
+  text-shadow: 6px 6px 9px rgb(0, 0, 0, 0.16);
+}

@@ -6,7 +6,7 @@ const form = {
 };
 const list = document.getElementById("list");
 const item = document.getElementById("err");
-
+console.log(localStorage.getItem("auth-token"));
 console.log(item.textContent);
 
 sendRequest = () => {

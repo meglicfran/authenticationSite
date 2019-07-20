@@ -5,7 +5,7 @@
 }
 body {
   text-align: center;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 h1 {
   font-size: 78px;
@@ -35,7 +35,7 @@ input {
 input::placeholder {
   color: #9a9a9a;
   font-size: 30px;
-  font-family: "Muli Extralight";
+  font-family: 'Muli Extralight';
 }
 
 .login {
@@ -60,7 +60,6 @@ input::placeholder {
   color: #9a9a9a;
   font-size: 24px;
   margin-top: 25px;
-
   text-shadow: 6px 6px 9px rgb(0, 0, 0, 0.16);
 }
 
@@ -95,4 +94,34 @@ input::placeholder {
   margin-bottom: 45px;
   margin-top: -40px;
   list-style-type: none;
+}
+.bottom {
+  margin-top: 68px;
+}
+.logout {
+  visibility: hidden;
+  width: 434px;
+  height: 68px;
+  border-radius: 40px;
+  border: 0px;
+  font-size: 27px;
+  color: white;
+  background-image: linear-gradient(to right, #4a7fe9, #00ffa8);
+  box-shadow: 6px 6px 9px rgb(0, 0, 0, 0.16);
+  margin-top: 10px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.logout:hover {
+  box-shadow: 6px 6px 9px rgb(0, 0, 0, 0);
+}
+
+.profile {
+  visibility: hidden;
+  text-decoration: none;
+  color: #9a9a9a;
+  font-size: 24px;
+  margin-top: 50px;
+  text-shadow: 6px 6px 9px rgb(0, 0, 0, 0.16);
 }

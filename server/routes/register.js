@@ -10,7 +10,6 @@ router.post("/", async (req, res) => {
   const vali = registervalidation(req.body);
   if (vali.error) {
     res.send(vali.error.details[0].message);
-    console.log(vali.error.details[0].message);
     return;
   }
   const usernameExists = await User.findOne({ username: req.body.username });
