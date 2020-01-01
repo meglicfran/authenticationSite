@@ -5,7 +5,7 @@
 }
 body {
   text-align: center;
-  font-family: "Muli", sans-serif;
+  font-family: 'Muli', sans-serif;
 }
 h1 {
   font-size: 78px;
@@ -20,6 +20,7 @@ h1 {
   flex-direction: column;
 }
 input {
+  outline: none;
   color: #777777;
   width: 434px;
   height: 80px;
@@ -35,7 +36,7 @@ input {
 input::placeholder {
   color: #9a9a9a;
   font-size: 30px;
-  font-family: "Muli Extralight";
+  font-family: 'Muli Extralight';
 }
 
 .signin {

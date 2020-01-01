@@ -20,6 +20,7 @@ h1 {
   flex-direction: column;
 }
 input {
+  outline: none;
   color: #777777;
   width: 434px;
   height: 80px;
