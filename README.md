@@ -1,2 +1,2 @@
 # AuthenticationSite
-authenticationSite made with node.js (express)
+Authentication site made with node.js (express)
